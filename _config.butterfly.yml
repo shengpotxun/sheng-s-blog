@@ -92,17 +92,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: http://tva1.sinaimg.cn/large/008tudqVgy1h5ljmelt6bj3334168x6w.jpg
+index_img: https://tva1.sinaimg.cn/large/008tudqVgy1h5rji58rqkj3334168x6w.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: http://tva1.sinaimg.cn/large/008tudqVgy1h5ljmelt6bj3334168x6w.jpg
+default_top_img: https://tva1.sinaimg.cn/large/008tudqVgy1h5rji58rqkj3334168x6w.jpg
 
 # The banner image of archive page
-archive_img: http://tva1.sinaimg.cn/large/008tudqVgy1h5ljmelt6bj3334168x6w.jpg
+archive_img: https://tva1.sinaimg.cn/large/008tudqVgy1h5rji58rqkj3334168x6w.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: http://tva1.sinaimg.cn/large/008tudqVgy1h5ljmelt6bj3334168x6w.jpg
+tag_img: https://tva1.sinaimg.cn/large/008tudqVgy1h5rji58rqkj3334168x6w.jpg
 
 # The banner image of tag page
 # format:
