@@ -1,0 +1,331 @@
+/* 变量 */
+
+:root {
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --waline-border-color: #888 !important;
+}
+
+[data-theme="dark"] {
+    --card-bg: rgba(18, 18, 18, 0.8);
+}
+
+
+/* 引入字体 */
+
+@font-face {
+    font-family: 'UbuntuMono';
+    src: url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/UbuntuMono-R.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/UbuntuMono-R.eot'), url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/UbuntuMono-R.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/UbuntuMono-R.woff') format('woff'), url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/UbuntuMono-R.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    font-display: swap
+}
+
+
+/* 新的模糊背景，需前往主题配置文件中先填入链接 */
+
+#web_bg {
+    filter: blur(50px) saturate(180%);
+    opacity: 30%;
+}
+
+
+/* 打赏二维码背景 */
+
+.post-reward .reward-main .reward-all {
+    box-shadow: var(--card-box-shadow);
+}
+
+
+/* 标题易读 */
+
+#article-container h1:before {
+    content: "H1";
+    margin: -.2rem 0 0 -2.3rem;
+}
+
+#article-container h2:before {
+    content: "H2";
+    margin: -.2rem 0 0 -2.2rem;
+}
+
+#article-container h3:before {
+    content: "H3";
+    margin: -.1rem 0 0 -2.1rem;
+}
+
+#article-container h4:before {
+    content: "H4";
+    margin: -.07rem 0 0 -1.9rem;
+}
+
+#article-container h5:before {
+    content: "H5";
+    margin: -.02rem 0 0 -1.8rem;
+}
+
+#article-container h6:before {
+    content: "H6";
+    margin: -.02rem 0 0 -1.8rem;
+}
+
+
+/* 链接颜色 */
+
+#article-container a {
+    color: #178b8b;
+}
+
+
+/* hr颜色 */
+
+hr {
+    border: 2px dashed #009688;
+    --hr-before-color: #009688;
+}
+
+
+/* 部分标签 */
+
+code,
+kbd,
+samp {
+    padding: 0.1rem 0.2rem;
+    background: rgba(27, 31, 35, 0.05);
+    color: #f47466;
+    font-size: var(--global-font-size);
+    font-family: UbuntuMono !important;
+}
+
+
+/* 加载进度条 */
+
+.pace .pace-progress {
+    background: #009688 !important;
+    height: 6px !important;
+}
+
+.pace .pace-progress-inner {
+    box-shadow: 0 0 10px #00968800, 0 0 5px #00968800 !important;
+}
+
+
+/* 版权信息 */
+
+[data-theme=dark] #post .post-copyright {
+    box-shadow: 0 0 5px #009688;
+    -webkit-box-shadow: 0 0 5px #009688;
+}
+
+
+/* 顶栏高斯模糊 */
+
+#page-header.nav-visible #nav {
+    -webkit-backdrop-filter: saturate(300%) blur(20px);
+    backdrop-filter: saturate(300%) blur(20px);
+}
+
+
+/* 页脚高斯模糊 */
+
+#footer-wrap {
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+}
+
+
+/* 美化 Workbox 的 PWA 更新提示 */
+
+.snackbar-pos.bottom-left {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(0, 150, 136, 0.8) !important;
+    border-radius: 8px;
+}
+
+
+/* 美化通知 */
+
+.snackbar-container .snackbar-pos.bottom-left {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(0, 150, 136, 0.8) !important;
+    border-radius: 5px;
+}
+
+
+/* 头像 */
+
+#waline-wrap .vuser,
+#article-container .flink .flink-list>.flink-list-item a .flink-item-icon img,
+.avatar-img img {
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+}
+
+
+/* valine */
+
+.v[data-class=v] .vpanel {
+    background: none !important;
+}
+
+
+/* aplayer暗色模式适配 */
+
+[data-theme="dark"] .aplayer {
+    background: #000;
+    color: #fff;
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-music .aplayer-author {
+    color: #ddd;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li.aplayer-list-light {
+    background: #505050;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li .aplayer-list-author {
+    color: #aaa;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li .aplayer-list-index {
+    color: #cfcfcf;
+}
+
+[data-theme="dark"] .aplayer .aplayer-lrc:after {
+    background: linear-gradient(180deg, hsl(0deg 0% 0% / 0%) 0, hsl(0deg 0% 0% / 80%));
+}
+
+[data-theme="dark"] .aplayer .aplayer-lrc:before {
+    background: linear-gradient(180deg, #000 0, hsl(0deg 0% 0% / 0%));
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+    fill: #fff;
+}
+
+[data-theme="dark"] .aplayer .aplayer-lrc p {
+    color: #fff;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li {
+    border-top: 1px solid #2e2e2e;
+}
+
+[data-theme="dark"] .aplayer.aplayer-withlist .aplayer-info {
+    border-bottom: 1px solid #404040;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li:hover {
+    background: #444;
+}
+
+
+/* Note亮暗色适配 */
+
+.note.default.flat {
+    background: #7771;
+}
+
+.note.primary.flat {
+    background: #6f42c111;
+}
+
+.note.success.flat {
+    background: #5cb85c11;
+}
+
+.note.info.flat {
+    background: #428bca11;
+}
+
+.note.warning.flat {
+    background: #f0ad4e11;
+}
+
+.note.danger.flat {
+    background: #d9534f11;
+}
+
+.note.flat {
+    color: var(--font-color);
+}
+
+[data-theme=dark] .note {
+    filter: none;
+}
+
+.note.simple {
+    border: 1px solid #444;
+    border-left-width: 5px;
+}
+
+[data-theme=dark] .note.simple {
+    border: 1px solid #bbb;
+    border-left-width: 5px;
+}
+
+
+/* Tag-hide亮暗色适配 */
+
+.hide-toggle>.hide-button {
+    background: #7772;
+    color: var(--font-color);
+}
+
+.hide-toggle {
+    border: 1px solid var(--tab-border-color);
+}
+
+
+/* 好康的链接暗色适配 */
+
+#article-container a.link-card {
+    background: var(--global-bg) !important;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%) !important;
+    color: var(--font-color) !important;
+}
+
+#article-container a.link-card:hover {
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 40%) !important;
+}
+
+#article-container a.link-card p.url {
+    color: var(--font-color) !important;
+}
+
+
+/* 隐藏内容暗色适配 */
+
+psw:hover {
+    color: var(--font-color) !important;
+}
+
+
+/* 进度条暗色适配 */
+
+[data-theme="dark"] .progress {
+    filter: brightness(.7);
+}
+
+
+/* Mathjax暗色适配 */
+
+[data-theme="dark"] .CtxtMenu_Menu {
+    background-color: black;
+    color: white;
+}
+
+[data-theme="dark"] .CtxtMenu_Info {
+    background-color: #333;
+    color: white;
+}
+
+[data-theme="dark"] .CtxtMenu_InfoContent {
+    background-color: #222;
+}
